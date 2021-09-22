@@ -1,0 +1,150 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    
+    background-image: url(../img/blue-sky-with-clouds.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container{
+    background-color: #64a9af;
+    padding: 20px;
+    display: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px 5px #00000033;
+}
+
+#container > .block {
+    padding: 20px;
+}
+
+.block {
+    justify-content: center;
+}
+#location{
+    background-color: #3c787e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+#temperature {
+    font-size: 5rem;
+    font-weight: bold;
+}
+#temperaturex{
+    margin-top: 20px;
+    background-color: #3c787e;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#description{
+    margin-top: 10px;
+}
+#date{
+    margin-bottom: 70px;
+}
+#date,
+#humidity{
+    padding-bottom: 20px;
+}
+#description,
+#humidity,
+#pressure{
+    font-weight: bold;
+    margin-top: 5px;
+    font-weight: 2rem;
+}
+
+.information-container{
+    display: flex;
+}
+#date{
+    font-weight: bold;
+    text-align: end;
+}
+
+#container-right{
+    background-color: #3c787e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+.loader {
+    font-size: 10px;
+    margin: 50px auto;
+    text-indent: -9999em;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    background: #3c787e;
+    background: -moz-linear-gradient(left, #3c787e 10%, rgba(255, 255, 255, 0) 42%);
+    background: -webkit-linear-gradient(left, #3c787e 10%, rgba(255, 255, 255, 0) 42%);
+    background: -o-linear-gradient(left, #3c787e 10%, rgba(255, 255, 255, 0) 42%);
+    background: -ms-linear-gradient(left, #3c787e 10%, rgba(255, 255, 255, 0) 42%);
+    background: linear-gradient(to right, #3c787e 10%, rgba(255, 255, 255, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #3c787e;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #64a9af;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima en tu lugar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body onload="onload()">
+    <div id="container">
+        <div class="block">
+            
+            <div id="location"></div>
+            <div id="temperaturex" class="info" class="information-container">
+                temperature (°C)
+                <div  id="temperature"></div>
+            </div>
+        </div>
+        <div class="block">
+            <div id="date"></div>
+            <div id="container-right">
+                <div class="info" class="information-container">
+                    humidity (%)
+                    <div id="humidity"></div>
+                </div>
+                <div class="info" class="information-container">
+                    pressure (hPa)
+                    <div id="pressure"></div>
+                </div>
+                <div id="description"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loader" class="loader">Loading...</div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
